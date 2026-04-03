@@ -1,0 +1,7 @@
+global_costmap:
+  global_frame: map  #  coordinate frame the costmap should run in
+  robot_base_frame: base_link # the coordinate frame the costmap should reference for the base of the robot.
+  update_frequency: 5.0
+  static_map: false   # whether or not the costmap should initialize itself based on a map served by the map_server.
+  rolling_window: true
+  track_unknown_space: true

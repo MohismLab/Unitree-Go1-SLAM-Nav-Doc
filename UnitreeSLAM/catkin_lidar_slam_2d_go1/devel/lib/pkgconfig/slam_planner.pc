@@ -1,0 +1,8 @@
+prefix=/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/devel
+
+Name: slam_planner
+Description: Description of slam_planner
+Version: 1.14.4
+Cflags: -I/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/devel/include -I/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/src/slamrplidarV2.0/slam_planner/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime dynamic_reconfigure geometry_msgs move_base_msgs nav_msgs roscpp

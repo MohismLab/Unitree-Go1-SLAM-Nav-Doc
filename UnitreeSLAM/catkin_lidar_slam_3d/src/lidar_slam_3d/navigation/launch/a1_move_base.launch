@@ -1,0 +1,34 @@
+<launch>
+  <!-- 设置参数，机器狗控制指令的 topic -->
+  <arg name="cmd_vel_topic" default="cmd_vel" />
+
+  <!-- 设置参数，机器狗里程计的 topic -->
+  <arg name="odom_topic" default="/localization/odom" />
+  
+  <!-- <master auto="start"/> -->
+  <!-- Run the map server --> 
+  <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(find my_map_package)/my_map.pgm my_map_resolution"/> -->
+
+  <!--- Run AMCL --> 
+  <!-- <include file="$(find amcl)/examples/amcl_omni.launch" /> -->
+
+  
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find navigation)/config/a1/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+    <rosparam file="$(find navigation)/config/a1/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find navigation)/config/a1/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find navigation)/config/a1/global_costmap_params.yaml" command="load" /> 
+    <rosparam file="$(find navigation)/config/a1/base_local_planner_params.yaml" command="load" />
+
+    <!-- for using teb_local_planner -->
+    <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+    <param name="controller_frequency" value="10.0" />
+    
+    <!-- 将一些 topic 映射到 另一些 topic -->
+    <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+    <!-- <remap from="odom" to="$(arg odom_topic)"/> -->
+    <remap from="move_base_simple/goal" to="goal"/>
+
+  </node>
+
+</launch> 

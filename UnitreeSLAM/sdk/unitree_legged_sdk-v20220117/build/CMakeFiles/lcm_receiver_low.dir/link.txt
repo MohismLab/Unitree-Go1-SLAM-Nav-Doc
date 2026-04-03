@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -fPIC  -rdynamic CMakeFiles/lcm_receiver_low.dir/examples/lcm_receiver_low.cpp.o  -o lcm_receiver_low  -L/home/unitree/UnitreeSLAM/sdk/unitree_legged_sdk-v20220117/lib -Wl,-rpath,/home/unitree/UnitreeSLAM/sdk/unitree_legged_sdk-v20220117/lib -pthread -lunitree_legged_sdk_arm64 -llcm 

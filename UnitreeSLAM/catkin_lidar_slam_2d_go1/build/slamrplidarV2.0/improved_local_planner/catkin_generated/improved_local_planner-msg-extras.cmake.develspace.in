@@ -1,0 +1,2 @@
+set(improved_local_planner_MESSAGE_FILES "/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/src/slamrplidarV2.0/improved_local_planner/msg/TrajectoryPointMsg.msg;/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/src/slamrplidarV2.0/improved_local_planner/msg/TrajectoryMsg.msg;/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/src/slamrplidarV2.0/improved_local_planner/msg/FeedbackMsg.msg")
+set(improved_local_planner_SERVICE_FILES "")

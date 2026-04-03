@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -fPIC  -rdynamic CMakeFiles/udp_send_test.dir/examples/multi_pc_udp_send.cpp.o  -o udp_send_test  -L/home/unitree/UnitreeSLAM/sdk/unitree_legged_sdk-v20220117/lib -Wl,-rpath,/home/unitree/UnitreeSLAM/sdk/unitree_legged_sdk-v20220117/lib -pthread -lunitree_legged_sdk_arm64 -llcm 

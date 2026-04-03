@@ -1,0 +1,8 @@
+prefix=/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/devel
+
+Name: slamware_ros_sdk
+Description: Description of slamware_ros_sdk
+Version: 1.0.0
+Cflags: -I/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/devel/include -I/home/unitree/UnitreeSLAM/catkin_lidar_slam_2d_go1/src/slamrplidarV2.0/slamware_ros_sdk/include
+Libs: -L${prefix}/lib -lslamware_ros_sdk
+Requires: nav_msgs roscpp rospy sensor_msgs std_msgs tf message_runtime

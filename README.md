@@ -1,6 +1,26 @@
 # Unitree Go1 SLAM Navgation Document
 ![cover](images/cover.jpeg)
 
+## Unitree Go1 Robot Hardware Setup
+
+- Launch the robot dog:
+    To power on the robot, you need to press the power button twice. 
+    Press it briefly the first time and hold it down for a longer time the second time.
+
+- Make sure the lidar is working properly:
+    - First, when the radar is turned on, there will be a startup waiting time of about 40 seconds. During this period, the indicator light of the radar will keep flashing yellow. As shown in the figure:
+    ![led_yellow](images/led_yellow.jpg)
+
+    - If correct. The radar indicator light will show green. As shown in the figure:
+    ![led_green](images/led_green.jpg)
+
+    - If ERROR! The radar indicator light will show red. As shown in the figure:
+    ![led_red](images/led_red.jpg)
+
+    - One solution is to remove the USB power cord and Ethernet data cable of the radar.
+
+## Unitree Go1 Robot Software Setup
+
 
 
 ## Network & Remote Control Setup

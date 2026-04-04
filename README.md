@@ -21,7 +21,39 @@
 
 ## Unitree Go1 Robot Software Setup
 
+### Unitree_ros_to_real
 
+- Copy folder "nano_ros_ws" of this repo to the "home" folder of main nano (unitree@192.168.123.15) on the Unitree Go1 robot.
+
+- Compile this ROS package:
+    1. Enter the folder "nano_ros_ws":
+    ```
+    cd nano_ros_ws
+    ```
+    2. Compile. Run command:
+    ```
+    catkin_make
+    ```
+    3. Add source to the .bashrc:
+    ```
+    echo "source ~/nano_ros_ws/devel/setup.bash" >> ~/.bashrc
+    ```
+
+### UnitreeSLAM
+
+- Copy folder "UnitreeSLAM" of this repo to the "home" folder of main nano (unitree@192.168.123.15) on the Unitree Go1 robot.
+    1. Enter the folder "catkin_lidar_slam_2d_go1":
+    ```
+    cd /UnitreeSLAM/catkin_lidar_slam_2d_go1/
+    ```
+    2. Compile. Run command:
+    ```
+    catkin_make --pkg slam_planner_sdk slamware_sdk
+    ```
+    3. Add source to the .bashrc:
+    ```
+    echo "source ~/UnitreeSLAM/catkin_lidar_slam_2d_go1/devel/setup.bash" >> ~/.bashrc
+    ```
 
 ## Network & Remote Control Setup
 
@@ -51,12 +83,7 @@
 
 ## Unitree Go1 ROS High-Level topic Control
 
-- Enter the Unitree Go1's Raspberry Pi.
-    Launch a terminal, Run the following commands.    
-    ```
-    sudo ssh pi@192.168.123.161
-    ```
-    - Password: 123
+- Launch a terminal, Run the following commands.    
 
 - Run the `rosrun` command.
     ```

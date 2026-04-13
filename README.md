@@ -64,7 +64,7 @@ Before setting up the WiFi remote control, we must make the settings through the
 
 - Connect the HDMI cable to position No.5 in the image.
 
-- Connect the USB docking station and mouse keyboard to position NO.4 in the image.
+- Connect the USB docking station and mouse keyboard to position No.4 in the image.
 
 - Connect to the WiFi you want.
 
@@ -122,10 +122,6 @@ Before setting up the WiFi remote control, we must make the settings through the
     ```
     rosrun unitree_legged_real twist_sub
     ```
-
-- Overall Process Demonstration
-    Upon successful startup, you will see the following interface.
-    ![twist_sub](images/twist_sub.jpeg)
 
 
 

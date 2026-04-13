@@ -62,9 +62,9 @@
 Before setting up the WiFi remote control, we must make the settings through the physical screen.
     ![go1back](images/go1back.jpg)
 
-- Connect the HDMI cable to position No. 5 in the image.
+- Connect the HDMI cable to position No.5 in the image.
 
-- Connect the USB docking station and mouse keyboard to position 4 in the image.
+- Connect the USB docking station and mouse keyboard to position NO.4 in the image.
 
 - Connect to the WiFi you want.
 

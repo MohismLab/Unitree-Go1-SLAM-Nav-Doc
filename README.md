@@ -17,7 +17,7 @@
     - If ERROR! The radar indicator light will show red. As shown in the figure:
     ![led_red](images/led_red.jpg)
 
-    - One solution is to remove the USB power cord and Ethernet data cable of the radar.
+    - One solution is to remove the USB power cord and Ethernet data cable of the radar. Then, reinsert.
 
 ## Unitree Go1 Robot Software Setup
 
@@ -56,6 +56,12 @@
     ```
 
 ## Network & Remote Control Setup
+
+### WiFi Settings
+    Before setting up the WiFi remote control, we must make the settings through the physical screen.
+    ![go1back](images/go1back.jpg)
+
+### Nomachine
 
 - Make sure your workstation and the Unitree Go1 robot are connected to the same WiFi network.
 

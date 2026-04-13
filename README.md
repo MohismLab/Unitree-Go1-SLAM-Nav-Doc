@@ -58,8 +58,24 @@
 ## Network & Remote Control Setup
 
 ### WiFi Settings
-    Before setting up the WiFi remote control, we must make the settings through the physical screen.
+
+Before setting up the WiFi remote control, we must make the settings through the physical screen.
     ![go1back](images/go1back.jpg)
+
+- Connect the HDMI cable to position No. 5 in the image.
+
+- Connect the USB docking station and mouse keyboard to position 4 in the image.
+
+- Connect to the WiFi you want.
+
+- Launch a terminal, Run the following commands to check the IP.
+
+    ```
+    ifconfig
+    ```
+
+- The IP address of wlan0 is the one you need to use.
+
 
 ### Nomachine
 
@@ -70,6 +86,13 @@
     About the NoMachine, you can install it by this link: https://www.nomachine.com/
 
     It supports installation across multiple brands and various operating systems.
+
+- Launch Nomachine. Click one the "Add" button as shown in the image.
+    ![click_add](images/click_add.jpg)
+
+- Next, Click on the "Add connection" button.
+
+- Next, Enter the IP address you just obtained at the "Host".
 
 - Establish a remote desktop connection
 
@@ -85,7 +108,11 @@
     ![nano_login](images/nano_login.jpeg)
     - Password: 123
 
-
+- Adjust the display resolution. Run the following commands:
+    ```
+    xrandr --fb 1920x1080
+    ```
+    You can adjust the different resolutions according to your needs.
 
 ## Unitree Go1 ROS High-Level topic Control
 

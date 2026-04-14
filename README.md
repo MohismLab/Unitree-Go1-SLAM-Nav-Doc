@@ -76,6 +76,25 @@ Before setting up the WiFi remote control, we must make the settings through the
 
 - The IP address of wlan0 is the one you need to use.
 
+- If you find that the connection is frequently disconnected during use. Please follow the instructions below. If not please ignore.
+
+    Launch a terminal, Run the following commands:
+
+    ```
+    sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+    ```
+
+    Change `wifi.powersave = 3` to `wifi.powersave = 2` (2 indicates disabled). Then restart the service:
+
+    ```
+    sudo systemctl restart NetworkManager
+    ```
+
+    Force USB not to enter power-saving mode:
+    
+    ```
+    sudo sh -c 'echo -1 > /sys/module/usbcore/parameters/autosuspend'
+    ```
 
 ### Nomachine
 
@@ -110,7 +129,7 @@ Before setting up the WiFi remote control, we must make the settings through the
 
 - Adjust the display resolution. Run the following commands:
     ```
-    xrandr --fb 1920x1080
+    xrandr --fb 1080x720
     ```
     You can adjust the different resolutions according to your needs.
 

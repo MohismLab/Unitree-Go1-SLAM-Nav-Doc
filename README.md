@@ -78,23 +78,23 @@ Before setting up the WiFi remote control, we must make the settings through the
 
 - If you find that the connection is frequently disconnected during use. Please follow the instructions below. If not please ignore.
 
-    Launch a terminal, Run the following commands:
+Launch a terminal, Run the following commands:
 
-    ```
-    sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
-    ```
+```
+sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+```
 
-    Change `wifi.powersave = 3` to `wifi.powersave = 2` (2 indicates disabled). Then restart the service:
+Change `wifi.powersave = 3` to `wifi.powersave = 2` (2 indicates disabled). Then restart the service:
 
-    ```
-    sudo systemctl restart NetworkManager
-    ```
+```
+sudo systemctl restart NetworkManager
+```
 
-    Force USB not to enter power-saving mode:
-    
-    ```
-    sudo sh -c 'echo -1 > /sys/module/usbcore/parameters/autosuspend'
-    ```
+Force USB not to enter power-saving mode:
+
+```
+sudo sh -c 'echo -1 > /sys/module/usbcore/parameters/autosuspend'
+```
 
 ### Nomachine
 

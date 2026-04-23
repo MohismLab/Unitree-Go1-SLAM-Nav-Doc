@@ -179,7 +179,8 @@ Before setting up the WiFi remote control, we must make the settings through the
 
 # Obtain lidar data for developing one's own algorithms
 
-Run this cmd, will launch topics of lidar data:
+Nomachine connect to Unitree Go1.
+Launch a terminal. Run this cmd, will launch topics of lidar data:
 ```
 roslaunch slamware_ros_sdk view_slamware_ros_sdk_server_node.launch
 ```

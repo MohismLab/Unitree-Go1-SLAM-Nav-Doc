@@ -176,3 +176,14 @@ Before setting up the WiFi remote control, we must make the settings through the
         You will see a red arrow representing the robot's current position and pose gradually moving toward the newly set target point.
         ![mid](images/mid.jpeg)
     
+
+# Obtain lidar data for developing one's own algorithms
+
+Run this cmd, will launch topics of lidar data:
+```
+roslaunch slamware_ros_sdk view_slamware_ros_sdk_server_node.launch
+```
+
+Lidar data topic details:
+
+https://developer.slamtec.com/docs/slamware/ros-sdk/2.8.2_rtm/slamware_ros_sdk_server_node/#2
